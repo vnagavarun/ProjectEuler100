@@ -1,0 +1,11 @@
+num = 2
+prev_num = 0
+res = 2
+while True:
+    x = 4*num + prev_num
+    if x >= 4000000:
+        break
+    res += x
+    prev_num = num
+    num = x
+print(res)
